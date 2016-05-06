@@ -13,7 +13,7 @@ namespace EnSharp_Project_3_EXCEL
         public Exception()
         {
 
-        } // Constructor
+        }
 
         public int inputData(int num)
         {
@@ -24,7 +24,7 @@ namespace EnSharp_Project_3_EXCEL
                 return Convert.ToInt32(str);
             else
                 return -1;
-        } // method - Input Method
+        }
 
         public int ExceptionString(string str, int num)
         {
@@ -43,7 +43,7 @@ namespace EnSharp_Project_3_EXCEL
             Console.WriteLine("              잘못 입력하셨습니다 :D");
             Console.ReadKey();
             return -1;
-        } // method - ExceptionString
+        }
 
         public int extractNumber(string strData)
         {
@@ -51,9 +51,9 @@ namespace EnSharp_Project_3_EXCEL
             int nTmp = int.Parse(strTmp);
 
             return nTmp;
-        } // Method - extractNumber
+        }
 
 
 
-    } // Class - Exception
+    }
 }

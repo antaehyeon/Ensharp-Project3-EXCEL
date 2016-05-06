@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnSharp Project 3 EXCEL", "EnSharp Project 3 EXCEL\EnSharp Project 3 EXCEL.csproj", "{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ensharp Project3 Excel", "Ensharp Project3 Excel\Ensharp Project3 Excel.csproj", "{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

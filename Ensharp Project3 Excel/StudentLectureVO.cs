@@ -29,7 +29,7 @@ namespace EnSharp_Project_3_EXCEL
             this.time = time;
             this.place = place;
             this.department = department;
-        } // Constructor
+        }
 
 
         public string Num
@@ -81,5 +81,5 @@ namespace EnSharp_Project_3_EXCEL
         }
 
 
-    } // Class - StudentLectureVO
+    }
 }

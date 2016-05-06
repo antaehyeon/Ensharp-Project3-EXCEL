@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9C0B201-FC6B-4626-9039-7A8E3DC6E0F7}</ProjectGuid>
+    <ProjectGuid>{33CA682C-8593-4FA1-8A77-E3F6717CC9B0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EnSharp_Project_3_EXCEL</RootNamespace>
-    <AssemblyName>EnSharp Project 3 EXCEL</AssemblyName>
+    <RootNamespace>Ensharp_Project3_Excel</RootNamespace>
+    <AssemblyName>Ensharp Project3 Excel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
