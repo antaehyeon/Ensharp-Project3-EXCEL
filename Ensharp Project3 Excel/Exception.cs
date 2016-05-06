@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
-
+/// <summary>
+/// 예외처리를 담당하는 Class
+/// </summary>
 namespace EnSharp_Project_3_EXCEL
 {
     class Exception
     {
-
-        public Exception()
-        {
-
-        }
+        public Exception() { } // Constructor
 
         public int inputData(int num)
         {
@@ -52,8 +50,5 @@ namespace EnSharp_Project_3_EXCEL
 
             return nTmp;
         }
-
-
-
     }
 }

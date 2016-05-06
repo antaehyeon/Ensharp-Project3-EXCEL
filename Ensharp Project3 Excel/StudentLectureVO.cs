@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// 객체지향적으로 구성하기 위해 학생의 수강신청 데이터를 한 Class 로 구성하였음
+/// 포함된 데이터는 학수번호, 과목이름, 분반, 학점, 교수, 시간, 강의실장소, 학과 이다.
+/// </summary>
 namespace EnSharp_Project_3_EXCEL
 {
     class StudentLectureVO
@@ -17,7 +20,6 @@ namespace EnSharp_Project_3_EXCEL
         private string place;
         private string department;
 
-
         public StudentLectureVO() { }
         public StudentLectureVO(string num, string name, string classes, string point, string professor, string time, string place, string department)
         {
@@ -30,7 +32,6 @@ namespace EnSharp_Project_3_EXCEL
             this.place = place;
             this.department = department;
         }
-
 
         public string Num
         {
@@ -79,7 +80,5 @@ namespace EnSharp_Project_3_EXCEL
             get { return department; }
             set { department = value; }
         }
-
-
     }
 }

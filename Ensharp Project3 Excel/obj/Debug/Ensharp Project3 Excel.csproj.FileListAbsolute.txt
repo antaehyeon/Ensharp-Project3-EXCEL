@@ -5,3 +5,10 @@ c:\users\administrator\documents\visual studio 2015\Projects\Ensharp Project3 Ex
 c:\users\administrator\documents\visual studio 2015\Projects\Ensharp Project3 Excel\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.csproj.ResolveComReference.cache
 c:\users\administrator\documents\visual studio 2015\Projects\Ensharp Project3 Excel\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.exe
 c:\users\administrator\documents\visual studio 2015\Projects\Ensharp Project3 Excel\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.pdb
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\bin\Debug\Ensharp Project3 Excel.exe.config
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.csproj.ResolveComReference.cache
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.exe
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.pdb
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\bin\Debug\Ensharp Project3 Excel.exe
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\bin\Debug\Ensharp Project3 Excel.pdb
+C:\Users\Administrator\Documents\Ensharp-Project3-EXCEL\Ensharp Project3 Excel\obj\Debug\Ensharp Project3 Excel.csprojResolveAssemblyReference.cache
