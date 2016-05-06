@@ -194,7 +194,7 @@ namespace EnSharp_Project_3_EXCEL
                             {
                                 this.run();
                             }
-                            lectureFunction.registerFromILecture();
+                            lectureFunction.registerFromInterestLecture();
                             break;
                         case 4:                   // 4번의 경우도 관심과목 신청에서는 예외처리로 들어가야하는 부분이다
                                                   // 수강신청 (mode : 1)의 경우에는 종료메뉴
