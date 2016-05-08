@@ -169,8 +169,8 @@ namespace EnSharp_Project_3_EXCEL
                             if (lectureFunction.findClass(2, 1) == -1)                   // 과목이 존재하지 않을경우 -1을 리턴하게 됨, 예외처리부분
                             {
                                 Console.ReadKey();
-                                if (mode == 1) this.coursesFunction(1);                   // (mode 1 : 수강신청)의 값을 가지고 다시 함수를 불러온다 = 뒤로가기
-                                else this.coursesFunction(3);                             // 그게 아니라면 (mode 3 : 관심과목신청)의 값을 가짐
+                                if (mode == 1)   this.coursesFunction(1);                 // (mode 1 : 수강신청)의 값을 가지고 다시 함수를 불러온다 = 뒤로가기
+                                else             this.coursesFunction(3);                 // 그게 아니라면 (mode 3 : 관심과목신청)의 값을 가짐
                             }
                             if (mode == 1) lectureFunction.lectureApplication(1);         // 수강신청 부분
                             else           lectureFunction.lectureApplication(3);         // 관심과목 신청 부분
@@ -179,12 +179,11 @@ namespace EnSharp_Project_3_EXCEL
                             if (lectureFunction.findClass(5, 2) == -1)
                             {
                                 Console.ReadKey();
-                                if (mode == 1) this.coursesFunction(1);
-                                else this.coursesFunction(3);
+                                if (mode == 1)  this.coursesFunction(1);
+                                else            this.coursesFunction(3);
                             }
                             if (mode == 1) lectureFunction.lectureApplication(1);
                             else           lectureFunction.lectureApplication(3);
-
                             break;
                         case 3:                   // 3번의 경우는 약간 다른데
                                                   // 수강신청일때는 관심과목에서 신청한 과목을 보여주는 메뉴이고

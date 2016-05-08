@@ -124,7 +124,7 @@ namespace EnSharp_Project_3_EXCEL
             print.enterClassNum();
 
             inputLecClass = Console.ReadLine();
-            if (inputLecNum == "b") return;
+            if (inputLecClass == "b") return;
 
             // MODE 1 : 수강신청
             if (mode == 1)
@@ -178,10 +178,10 @@ namespace EnSharp_Project_3_EXCEL
                         singleton.ApplicationLectureNum -= 1;
                         // 학점도 빼준다
                         singleton.StudentGrade -= Convert.ToInt32(singleton.StudentLectureList[i].Point);
+                        // 시간표 에서도 해당과목이 쓰여졌던 것을 공백으로 덮어씌운다
+                        setCheckTimeTable(singleton.StudentLectureList[i].Name, singleton.StudentLectureList[i].Time, 2);
                         // 그리고 해당 Index(i)의 List를 삭제한다
                         singleton.StudentLectureList.RemoveAt(i);
-                        // 시간표 에서도 해당과목이 쓰여졌던 것을 공백으로 덮어씌운다
-                        setCheckTimeTable(arrayGetValueString(lectureIndex[i], 2), arrayGetValueString(lectureIndex[i], 6), 2);
                         return;
                     }
                 }
@@ -348,7 +348,7 @@ namespace EnSharp_Project_3_EXCEL
             }
 
             // 학수번호와 분반을 입력받는다
-            print.whatRetractionLecture();
+            print.whatApplicationLecture();
             inputLectureNum = Console.ReadLine();
             if (inputLectureNum == "b") return;
             print.enterClassNum();
