@@ -31,6 +31,7 @@ namespace EnSharp_Project_3_EXCEL
 
         private string[,] timeTableCheck;
 
+
         public Singleton()
         {
             ExcelApp = new Excel.Application();

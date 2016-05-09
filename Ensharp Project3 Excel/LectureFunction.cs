@@ -224,7 +224,7 @@ namespace EnSharp_Project_3_EXCEL
             // MODE 4 : 관심과목 철회
             else if (mode == 4)
             {
-                for (int i = 0; i < lectureIndex.Count; i++)
+                for (int i = 0; i < singleton.InterestLectureList.Count; i++)
                 {
                     // 입력한 학수번호와 분반이 관심과목List에 존재한다면
                     if (inputLecNum.Equals(singleton.InterestLectureList[i].Num) && inputLecClass.Equals(singleton.InterestLectureList[i].Classes))
