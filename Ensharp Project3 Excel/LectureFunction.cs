@@ -185,6 +185,7 @@ namespace EnSharp_Project_3_EXCEL
                         return;
                     }
                 }
+                // 존재하지 않는다면 ERROR MESSAGE
                 print.incorrectData();
             }
 
@@ -217,8 +218,10 @@ namespace EnSharp_Project_3_EXCEL
                         }
                         // 현재 과목 데이터 수강 List에 저장
                         setStudentData(lectureIndex[i], 2);
+                        return;
                     }
                 }
+                print.incorrectData();
             }
 
             // MODE 4 : 관심과목 철회
@@ -285,6 +288,7 @@ namespace EnSharp_Project_3_EXCEL
         {
             int currentRegisterLectureNum;
 
+            // 수강신청
             if (mode == 1)
             {
                 // 현재의 수강신청 갯수를 받아와서
@@ -303,6 +307,7 @@ namespace EnSharp_Project_3_EXCEL
                     }
                 }
             }
+            // 관심과목
             else if (mode == 2)
             {
                 currentRegisterLectureNum = singleton.InterestLectureList.Count;
@@ -391,8 +396,10 @@ namespace EnSharp_Project_3_EXCEL
                     singleton.ApplicationLectureNum += 1;
                     singleton.StudentLectureList.Add(interestLectureList[i]);
                     interestLectureList.RemoveAt(i);
+                    return;
                 }
             }
+            print.incorrectData();
         }
 
         // 시간의 중복을 체크하고
@@ -428,8 +435,11 @@ namespace EnSharp_Project_3_EXCEL
             startTime = (time / 10000);
             endTime = time - (startTime * 10000);
             count = (endTime - startTime) / 50;
-            row = ((startTime - 900) / 100) * 2;
+            row = ((startTime - 900) / 100) * 2; // 과목의 시간위치를 찾는부분
 
+            // 숫자는 100을 넘어야 넘어가므로, 30분단위의 계산을 맞춰주기 위해서 
+            //(즉, 시간은 60분이지만 일반적인 정수는 100이기 때문에 오차가생김)
+            // 조건에 해당하면 값을 1씩 증가시켜줌
             if ((startTime - 900) % 100 > 0)
             {
                 row++;
@@ -463,7 +473,7 @@ namespace EnSharp_Project_3_EXCEL
                         break;
                 }
 
-                // 해당 부분에 데이터가 있는지 없는지 체크하기 위해서 
+                // 해당 부분에 데이터가 있는지 없는지 체크하기 위해서 문자열을 전부 더함
                 for (int i = row; i < row + count; i++)
                 {
                     checkData += singleton.TimeTableCheck[i, column];
@@ -488,7 +498,9 @@ namespace EnSharp_Project_3_EXCEL
                         return false;
                     }
                 }
-                // 윗부분에서 요일이 2개있을시 탈출하기 위한 조건문
+                // 요일이 한번일 경우 탈출하기 위한 조건문
+                // if를 두번사용하게 된 이유는, 두번째 요일도 계산해서 전부 검색하고나서
+                // 이쪽으로 올때 secondDay 일 경우도 탈출하게 해줘야하기 때문이다..
                 if (day == secondDay || secondDay == "")
                 {
                     break;

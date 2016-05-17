@@ -217,7 +217,7 @@ namespace EnSharp_Project_3_EXCEL
 
         public void limitGrade24Message()
         {
-            setConsoleColor("수강신청은 24학점까지 가능합니다");
+            setConsoleColor("관심과목담기는 24학점까지 가능합니다");
             Console.ReadKey();
         }
 

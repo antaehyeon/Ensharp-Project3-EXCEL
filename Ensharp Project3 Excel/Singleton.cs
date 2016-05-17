@@ -20,16 +20,16 @@ namespace EnSharp_Project_3_EXCEL
         private Excel.Worksheet worksheet;
         private Excel.Range cellRange;
 
-        private Array data;
+        private Array data; // 엑셀데이터
         private List<StudentLectureVO> studentLectureList;
         private List<StudentLectureVO> interestLectureList;
 
-        private int applicationLectureNum = -1;
-        private int applicationInterestLectureNum = -1;
-        private int studentGrade = 0;
-        private int interestGrade = 0;
+        private int applicationLectureNum = -1; // 수강신청된 갯수
+        private int applicationInterestLectureNum = -1; // 관심과목 신청된 갯수
+        private int studentGrade = 0;  // 수강신청된 학점
+        private int interestGrade = 0; // 관심과목신청된 학점
 
-        private string[,] timeTableCheck;
+        private string[,] timeTableCheck; // 과목시간의 중복을 체크하기 위해서 배열을 선언
 
 
         public Singleton()
